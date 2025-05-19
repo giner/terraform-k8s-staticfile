@@ -93,8 +93,8 @@ resource "kubernetes_deployment_v1" "this" {
             }
 
             requests = {
-              cpu    = "0.25"
-              memory = "256Mi"
+              cpu    = "0"
+              memory = "32Mi"
             }
           }
         }
