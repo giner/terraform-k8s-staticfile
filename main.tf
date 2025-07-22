@@ -6,6 +6,8 @@ resource "kubernetes_config_map_v1" "config" {
 
   data = {
     "staticfile.conf" = <<-EOF
+      server_tokens off;
+
       add_header Cache-Control no-cache;
 
       gzip on;
