@@ -8,6 +8,9 @@ resource "kubernetes_config_map_v1" "config" {
     "staticfile.conf" = <<-EOF
       add_header Cache-Control no-cache;
 
+      gzip on;
+      gzip_types ${var.content_type};
+
       types {
           ${var.content_type} html;
       }
