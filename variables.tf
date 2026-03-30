@@ -29,3 +29,11 @@ variable "content_type" {
 
   description = "Content type for the response"
 }
+
+variable "additional_headers" {
+  type = map(string)
+
+  default = {}
+
+  description = "Additional headers to add (e.g., { X-Custom-Header = \"value\" })"
+}
