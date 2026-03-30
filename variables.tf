@@ -26,4 +26,6 @@ variable "content_type" {
   type = string
 
   default = "text/html"
+
+  description = "Content type for the response"
 }
